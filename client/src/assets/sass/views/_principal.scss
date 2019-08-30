@@ -1,0 +1,10 @@
+.principal-view {
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn-warning {
+      font-weight: bold;
+    }
+  }
+}

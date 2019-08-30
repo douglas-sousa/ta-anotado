@@ -1,0 +1,18 @@
+#note-modal-component {
+  top: 40px;
+
+  .change-date-status {
+    float: right;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+      font-size: $hover-font;
+    }
+  }
+
+  .reset-note:hover {
+    cursor: pointer;
+    font-size: $hover-font;
+  }  
+}

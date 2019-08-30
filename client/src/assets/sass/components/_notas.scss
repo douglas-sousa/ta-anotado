@@ -1,0 +1,49 @@
+$side-margin: 5px;
+
+.notas-component {
+  margin-top: 25px;
+
+  #add-note { 
+    @include sideMargin($side-margin); 
+    margin-bottom: 10px;
+    font-weight: bold;
+    .fa-plus-circle { color: $warning-color; }
+
+    & span:hover {
+      cursor: pointer;
+      font-size: $hover-font;
+    }
+
+    a { color: $warning-color; }
+  }
+
+  .note-group {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+  
+    .individual-note {
+      @include sideMargin($side-margin);
+  
+      .main-card {
+        width: 350px;
+        min-height: 250px;
+
+        .fa-edit {
+          float: right;
+          &:hover {
+            cursor: pointer;
+            font-size: $hover-font;
+          }
+          color: black;
+        }
+
+        .del-footer:hover {
+          cursor: pointer;
+          font-size: $hover-font;
+          .fa-times-circle { color: $danger-color; }
+        }
+      }
+    }
+  }
+}
