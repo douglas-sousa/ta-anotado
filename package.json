@@ -1,0 +1,21 @@
+{
+  "name": "anotacoes",
+  "version": "1.0.0",
+  "description": "Site para anotações",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "author": "douglas-sousa",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.3",
+    "nodemailer": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
