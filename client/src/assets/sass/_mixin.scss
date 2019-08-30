@@ -1,0 +1,10 @@
+//Reescrever a barra de navegação b-nav para a direita
+@mixin navDireita($class) {
+  #{$class} {
+    .nav { justify-content: flex-end }
+  }
+}
+
+@mixin sideMargin($value) {
+  margin: 0 $value;
+}
